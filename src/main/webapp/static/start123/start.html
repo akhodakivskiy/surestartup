@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/x-icon" href="/static/start123/favicon.ico">
+    <link rel="stylesheet" href="/static/css/pure-min.css">
+    <link rel="stylesheet" href="/static/css/grids-responsive-min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<lift:embed what="edit-controls">
+    <lift:bind-at name="menu_item"></lift:bind-at>
+</lift:embed>
+
+<div id="layout">
+
+    <div class="header">
+        <img class="logo" src="/static/start123/icon48.png">
+        <h1 data-lift="IdeaTitle">
+            <span>SureStartup</span>
+        </h1>
+
+        <h2 data-lift="IdeaDescription">
+            <span>Validate your startup idea in 5 minutes</span>
+        </h2>
+    </div>
+
+    <div class="content">
+
+        <h3 data-lift="IdeaText?name=start-header">
+            <span>Hi there! You caught us before we're ready.</span>
+        </h3>
+
+        <p data-lift="IdeaText?name=start-copy">
+<span>
+We are working hard to put the finishing touches on the product. Things are
+going well and it should be ready quite soon to help you with startup idea
+validation. If you'd like us to send you a reminder when we're ready, just
+put your email below.
+</span>
+        </p>
+
+        <form data-lift="IdeaEmailSignup">
+            <div class="remind-me-form pure-form pure-form-stacked">
+                <fieldset>
+                    <input type="hidden" name="_subject" value="Thanks for your interest in SureStartup!" />
+                    <input type="hidden" name="_next" value="//www.surestartup.com/thanks.html" />
+                    <input type="hidden" name="plan" id="plan" />
+
+                    <label for="input-email" data-lift="IdeaText?name=email-label">
+                        <span>Email</span>
+                    </label>
+                    <input class="pure-u-1 pure-u-md-1-3" type="email" id="input-email" data-name="email"/>
+
+                    <label for="input-name" data-lift="IdeaText?name=name-label">
+                        <span>Name (optional)</span>
+                    </label>
+                    <input class="pure-u-1 pure-u-md-1-3" type="text" id="input-name" data-name="name"/>
+
+                    <label for="input-message" data-lift="IdeaText?name=message-label">
+                        <span>Message to us (optional)</span>
+                    </label>
+                    <textarea class="pure-u-1 pure-u-md-2-3" id="input-message" rows="3" data-name="message"></textarea>
+
+                </fieldset>
+                <div data-lift="IdeaText?name=submit-send">
+                    <button class="pure-button pure-button-primary" data-name="submit">
+                        <span>Send</span>
+                    </button>
+                </div>
+                <p data-name="feedback">
+                    <span>Thanks for loging up. We will inform you as soon as we are ready to launch.</span>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p class="copyright" data-lift="IdeaText?name=copyright">
+            <span>&copy; 2014 SureStartup. All rights reserved</span>
+        </p>
+        <p class="powered">
+            <a data-lift="IdeaPowered" href="#">Powered by SureStartup</a>
+        </p>
+    </div>
+</div>
+
+<div data-lift="embed?what=ga"></div>
+
+</body>
+</html>
+

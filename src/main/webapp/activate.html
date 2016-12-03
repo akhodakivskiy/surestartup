@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Log In</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+</head>
+<body class="lift:content_id=content">
+
+<div id="content" data-lift="surround?with=default;at=content">
+
+    <h2>Account Activation</h2>
+
+    <form class="pure-form pure-form-stacked" data-lift="UserActivate?form=post">
+        <label for="activate-first">First name:</label>
+        <input data-name="first" id="activate-first" type="text">
+
+        <label for="activate-last">Last name:</label>
+        <input data-name="last" id="activate-last" type="text">
+
+        <label for="activate-password">Password:</label>
+        <input data-name="password" id="activate-password" type="password">
+
+        <label for="activate-confirm-password">Confirm password:</label>
+        <input data-name="confirm-password" id="activate-confirm-password" type="password">
+
+        <button data-name="submit" type="submit" class="pure-button pure-button-primary">Activate</button>
+    </form>
+
+    <p>
+        <span data-lift="Msg?id=activate-msg&errorClass=text-danger"></span>
+    </p>
+
+</div>
+
+</body>
+</html>
+

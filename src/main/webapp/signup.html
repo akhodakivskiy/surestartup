@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+</head>
+<body class="lift:content_id=content">
+
+<div id="content" data-lift="surround?with=default;at=content">
+    <h2>Sign Up</h2>
+
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="col-start-left">
+                <p>Just enter you email address, we will send you an email with a link to complete registration.</p>
+
+                <form class="pure-form pure-form-stacked" data-lift="UserSignUp?form=post">
+                    <label for="signup-email">Email:</label>
+                    <input data-name="email" id="signup-email" type="email">
+                    <button data-name="submit" type="submit" class="pure-button pure-button-primary">Sign Up</button>
+                </form>
+
+                <p>
+                    <span data-lift="Msg?id=signup-msg&errorClass=text-danger"></span>
+                </p>
+
+                <p>Already have an account? <a data-lift="Menu.item?name=Log+In">Log in here</a>.</p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="col-start-right">
+                <div data-lift="embed?what=social"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

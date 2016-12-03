@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+</head>
+<body class="lift:content_id=content">
+
+<div id="content" data-lift="surround?with=default;at=content">
+
+    <h2><span data-lift="IdeaSnips.title"></span> <small>signups</small></h2>
+
+    <div data-lift="SignupsPage.isEmpty">
+        <p>This page doesn't have any signups yet. Consider publishing the links to the page in social media.</p>
+    </div>
+
+    <div data-lift="SignupsPage.isNotEmpty">
+        <p><a data-lift="SignupsPage.csv">Download CSV</a></p>
+
+        <table class="pure-table pure-table-horizontal my-table">
+            <thead data-lift="SignupsPage.paginate">
+            <tr>
+                <th><sort:email>Email</sort:email>&nbsp;<hint:email/></th>
+                <th><sort:name>Name</sort:name>&nbsp;<hint:name/></th>
+                <th><sort:message>Message</sort:message>&nbsp;<hint:message/></th>
+                <th><sort:date>Date</sort:date>&nbsp;<hint:date/></th>
+            </tr>
+            </thead>
+            <tbody data-lift="SignupsPage.render">
+            <tr>
+                <td data-name="email">akhodakivskiy@gmail.com</td>
+                <td data-name="name">Anton</td>
+                <td data-name="message">Hello World</td>
+                <td data-name="date">April 1st 1986</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div data-lift="SignupsPage.paginate" class="my-paginator">
+            <ul class="pure-paginator">
+                <nav:first></nav:first>
+                <nav:zoomedpages></nav:zoomedpages>
+                <nav:last></nav:last>
+            </ul>
+            <span><nav:records></nav:records></span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+

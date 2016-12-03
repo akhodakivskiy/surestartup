@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="/static/css/pure-min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="/static/css/grids-responsive-min.css" media="all" rel="stylesheet" type="text/css">
+
+    <link href="/static/usability/css/main.css" media="all" rel="stylesheet" type="text/css">
+
+    <link charset="utf-8" href="/static/usability/css/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div data-lift="embed?what=edit-controls"></div>
+
+<div class="header">
+    <div class="content">
+        <div class="logo" data-lift="IdeaImg?name=logo&height=69&width=71">
+            <img src="/static/usability/images/logo.png">
+        </div>
+
+        <h1 data-lift="IdeaTitle">
+            <span>Usability</span>
+        </h1>
+
+        <h2 data-lift="IdeaDescription">
+            <span>Write a Benefit Driven Value Proposition Here</span>
+        </h2>
+
+        <h3 data-lift="IdeaText?name=expand-title">
+            <span>Expand on your idea a bit more here with a few sentences. You can introduce a problem that you’re solving, and you can talk more about the specifics. Not too long though.</span>
+        </h3>
+    </div>
+</div>
+
+<div class="feature feature-a">
+    <div class="content">
+        <div id="signup">
+            <h3 data-lift="IdeaText?name=so-close">
+                <span>We are so close to launching!</span>
+            </h3>
+
+            <p data-lift="IdeaText?name=interest">
+                <span>So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.</span>
+            </p>
+
+            <form data-lift="IdeaEmailSignup">
+                <div class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <label for="email" data-lift="IdeaText?name=email-prompt">
+                            <span>Enter your email to be notified:</span>
+                        </label>
+                        <input data-name="email" id="email" type="email" placeholder="Email">
+
+                        <label for="message" data-lift="IdeaText?name=message-prompt">
+                            <span>Message to us (optional)</span>
+                        </label>
+                        <textarea data-name="message" id="message" rows="3" class="pure-input-1-2"></textarea>
+                    </fieldset>
+
+                    <div data-lift="IdeaText?name=submit">
+                        <button data-name="submit" class="pure-button button-secondary">
+                            <span>Remind me when you launch</span>
+                        </button>
+                    </div>
+                    <p data-name="feedback">
+                        <span>Thanks for signinj up. We will inform you as soon as we are ready to launch.</span>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="content">
+        <p class="copyright" data-lift="IdeaText?name=copyright">
+            <span>Copyright © 2014 Your Company Name</span>
+        </p>
+        <p class="powered">
+            <a data-lift="IdeaPowered" href="#">Powered by SureStartup</a>
+        </p>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div data-lift="embed?what=ga"></div>
+
+</body>
+</html>

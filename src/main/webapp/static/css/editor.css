@@ -1,0 +1,76 @@
+.surestartup-edit-controls {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 0px;
+    z-index: 100000;
+    margin: auto;
+    background-color: black;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.surestartup-edit-controls ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    vertical-align: middle;
+    background-color: #2A2A2A;
+    box-sizing: border-box;
+    border-bottom: 2px solid red;
+}
+
+.surestartup-edit-controls ul li {
+    margin: 0;
+    padding: 0 7px;
+    display: inline-block;
+    list-item-decoration: none;
+    height: 100%;
+    font-size: 18px;
+    color: #777;
+}
+
+.surestartup-edit-controls ul li a {
+    text-decoration: none;
+    color: #CCC;
+}
+
+.surestartup-edit-controls ul li a:hover {
+    color:red;
+}
+
+.surestartup-edit-pusher {
+    position: relative;
+    height: 50px;
+}
+
+.surestartup-edit-border {
+    box-sizing: border-box;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #ADD8E6;
+    border-style: dashed;
+    cursor: text;
+}
+
+.surestartup-edit {
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.surestartup-image-border {
+    padding: 5px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #ADD8E6;
+    border-style: dashed;
+    cursor: pointer;
+}
+
+.surestartup-signup-help {
+    color: red;
+}

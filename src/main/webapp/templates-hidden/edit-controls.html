@@ -1,0 +1,37 @@
+<div>
+    <head_merge>
+        <meta data-lift="IdeaMeta" />
+    </head_merge>
+
+    <div data-lift="ControlsCheck" class="surestartup-reset">
+        <head_merge>
+            <link rel="stylesheet" href="/static/css/editor.css">
+            <link rel="stylesheet" href="/static/font-awesome-4.2.0/css/font-awesome.min.css">
+            <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+            <script type="text/javascript" src="/static/js/dropzone.js"></script>
+        </head_merge>
+
+        <div class="surestartup-edit-controls" data-lift="Controls">
+            <ul>
+                <li data-name="cancel">
+                    <a href="#" title="Cancel"><i class="fa fa-close"></i> Cancel</a>
+                </li>
+                <li data-name="prev">
+                    <a href="#" title="Previous"><i class="fa fa-arrow-left"></i></a>
+                </li>
+                <li data-name="page">Page <span data-name="current">1</span> of <span data-name="total">2</span></li>
+                <lift:bind name="menu_item"></lift:bind>
+                <li data-name="next">
+                    <a href="#" title="Next"><i class="fa fa-arrow-right"></i></a>
+                </li>
+                <li data-name="save">
+                    <a href="#" title="Save"><i class="fa fa-save"></i> Save</a>
+                </li>
+                <li data-name="auth">
+                    <a href="#" title="Log In or Sign Up"><i class="fa fa-sign-in"></i> Continue</a>
+                </li>
+            </ul>
+        </div>
+        <div class="surestartup-edit-pusher"></div>
+    </div>
+</div>

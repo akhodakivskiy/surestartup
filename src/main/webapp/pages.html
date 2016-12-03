@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>Start</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+</head>
+<body class="lift:content_id=content">
+
+<div id="content" data-lift="surround?with=default;at=content">
+
+    <h2>Pages</h2>
+
+    <div data-lift="IdeasPage.isEmpty">
+        <p>You haven't created any pages yet. <a data-lift="Menu.item?=name=New+Page" href="#">Create new page</a> right now!</p>
+    </div>
+
+    <div data-lift="IdeasPage.isNotEmpty">
+        <table class="pure-table pure-table-horizontal my-table">
+            <thead data-lift="IdeasPage.paginate">
+                <tr>
+                    <th><sort:title>Title</sort:title>&nbsp;<hint:title/></th>
+                    <th><sort:localid>Local ID</sort:localid>&nbsp;<hint:localid/></th>
+                    <th><sort:updated>Updated</sort:updated>&nbsp;<hint:updated/></th>
+                    <th><sort:published>Online</sort:published>&nbsp;<hint:published/></th>
+                    <th>Signups</th>
+                </tr>
+            </thead>
+            <tbody data-lift="IdeasPage.render">
+                <tr>
+                    <td><a href="#" data-name="title">Title</a></td>
+                    <td data-name="local-id">surestartup</td>
+                    <td data-name="updated-at"></td>
+                    <td>
+                        <a title="Local URL" data-name="local-link"><i class="fa fa-link"></i></a>
+                        <a title="External URL" data-name="external-link"><i class="fa fa-external-link"></i></a>
+                    </td>
+                    <td><a data-name="signups">10</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div data-lift="IdeasPage.paginate" class="my-paginator">
+            <ul class="pure-paginator">
+                <nav:first></nav:first>
+                <nav:zoomedpages></nav:zoomedpages>
+                <nav:last></nav:last>
+            </ul>
+            <span><nav:records></nav:records></span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

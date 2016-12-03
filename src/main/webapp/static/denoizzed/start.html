@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="/static/css/pure-min.css">
+    <link rel="stylesheet" href="/static/css/grids-responsive-min.css">
+    <link rel="stylesheet" href="/static/denoizzed/main.css">
+
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/denoizzed/backstretch.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div data-lift="embed?what=edit-controls"></div>
+
+<div id="bg"></div>
+
+<div id="header">
+    <div class="content">
+        <h1>
+        <span data-lift="IdeaTitle">
+            <span>SureStartup</span>
+        </span>
+        </h1>
+
+        <h2 data-lift="IdeaDescription">
+            <span>Landing page for your startup idea</span>
+        </h2>
+    </div>
+</div>
+
+<div id="wrapper">
+
+    <div class="content">
+
+        <div class="desc">
+            <a href="/" class="back">&larr; back</a>
+
+            <p data-lift="IdeaText?name=hi-there">
+                <span>Hi there! You caught us before we're ready.</span>
+            </p>
+
+            <p class="small" data-lift="IdeaText?name=working-hard">
+<span>We are working hard to put the finishing touches on the product.
+Things are going well and it should be ready quite soon to help you with
+startup idea validation. If you'd like us to send you a reminder
+when we're ready, just put your email below.</span>
+            </p>
+
+            <form data-lift="IdeaEmailSignup">
+
+                <input type="text" id="email" name="email" placeholder="Email" data-name="email">
+
+                <div data-lift="IdeaText?name=subscribe-me">
+                    <button class="pure-button button-submit" data-name="submit">
+                        <span>Subscribe Me</span>
+                    </button>
+                </div>
+
+                <p data-name="feedback">
+                    <span>Thanks for loging up. We will inform you as soon as we are ready to launch.</span>
+                </p>
+
+            </form>
+        </div>
+
+
+        <hr>
+
+        <div class="footer pure-g">
+            <div class="pure-u-1-2">
+                <p class="copyright" data-lift="IdeaText?name=copyright">
+                    <span>Copyright © 2014 Your Company Name</span>
+                </p>
+            </div>
+            <div class="pure-u-1-2">
+                <p class="powered">
+                    <a data-lift="IdeaPowered" href="#">Powered by SureStartup</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-lift="embed?what=ga"></div>
+
+<script type="text/javascript">$.backstretch('/static/denoizzed/images/bg.jpg');</script>
+
+</body>
+
+</html>

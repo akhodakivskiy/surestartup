@@ -1,0 +1,268 @@
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+	font: 14px/24px "Lato", Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
+	line-height: 1.6;
+}
+
+body {
+	background: black;
+    color: white;
+}
+
+.backstretch {
+    opacity: .2;
+}
+
+#header, #wrapper {
+    max-width: 1024px;
+}
+
+#header {
+	margin: 60px auto;
+	width: 80%;
+}
+
+#wrapper {
+	margin: 100px auto 0;
+	width: 80%;
+}
+
+#header h1 {
+	font-size: 36px;
+	margin: 0 0 -5px 0;
+	font-weight: bold;
+}
+
+#header h1:before {
+    content: "";
+    background: url('/static/denoizzed/images/logo-30.png') no-repeat;
+    background-size: 30px 38px;
+    display: inline-block;
+    width: 30px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+#header h2 {
+    margin-left: 48px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#content {
+	transition: all 0.5s ease-in-out;
+}
+
+.desc {
+	width: 640px;
+	font-size: 46px;
+	line-height: 1.4;
+	margin: 100px auto 0;
+	color: white;
+}
+
+.desc p {
+	margin-bottom: 24px;
+}
+
+p.small {
+	font-size: 24px;
+}
+
+.bullets {
+    margin-top: 160px;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.bullet-item {
+	font-size: 16px;
+	padding-right: 6%;
+}
+
+.bullet-item h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.bullet-item p {
+	line-height: 1.7;
+	font-size: 18px;
+}
+
+.circle {
+	border: 3px solid orange;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	padding: 20px;
+	width: 30px;
+	border-radius: 100px;	 
+ 	background-clip: padding-box;
+}
+
+.button-wrapper {
+	text-align: center;
+	width: 100%;
+	clear: both;
+	margin: 100px 0 100px;
+}
+
+.button-main {
+	color: white;
+	background: orange;
+	padding: 15px 50px 20px 50px;
+	border-radius: 100px;
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in;
+}
+
+.button-main:hover {
+	color: orange;
+	background: white;
+}
+
+
+.back {
+	top: 30px;
+	font-size: 16px;
+	text-decoration: none;
+	color: orange;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+form {
+	padding: 40px 0 120px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+form input[type="text"] {
+	background: none;
+	padding: 15px 20px;
+	border: 1px solid grey;
+	border-radius: 100px;
+	font-size: 18px;
+	color: white;
+	width: 300px;
+	transition: all .7s ease-in;
+	opacity: .7;
+	text-align: center;
+}
+
+form input[type="text"]:focus {
+		opacity: 1;
+		border-color: orange;
+}
+
+.button-submit {
+	color: white;
+	border: 1px solid orange;
+	background: orange;
+	padding: 15px 30px;
+	border-radius: 100px;
+	font-size: 18px;
+	line-height: 24px;
+	box-sizing: content-box;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+
+.button-submit:hover {
+	color: orange;
+	background: white;
+	border: 1px solid white;
+}
+
+form p {
+	font-size: 24px;
+}
+
+.footer p.copyright {
+    text-align: left;
+}
+
+.footer p.powered {
+    text-align: right;
+}
+
+.footer p.powered a {
+	color: #777;
+}
+
+@media (max-width: 1024px) {
+
+    #header {
+    	text-align: center;
+	    margin: 40px 0 60px;
+    	width: 100%;
+    	border-bottom: 1px solid orange;
+    }
+
+    #header h2 {
+        margin-right: 10px;
+    }
+
+    #wrapper {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .desc {
+        margin-top: 40px;
+        width: 100%;
+    	padding: 0;
+    }
+
+    .bullets {
+        margin: 100px 0 60px;
+    }
+
+    .bullet-item {
+        padding-right: 0;
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+    .circle
+    {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .back
+    {
+    	display: inline-block;
+    	margin: 0 auto;
+    	text-align: center;
+
+    }
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    #header h1:before {
+        background: url('/static/denoizzed/images/logo-60.png') no-repeat;
+        background-size: 30px 38px;
+    }
+}

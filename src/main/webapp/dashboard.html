@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+</head>
+<body class="lift:content_id=content">
+
+<div id="content" data-lift="surround?with=default;at=content">
+
+    <h2><span data-lift="IdeaSnips.title"></span> <small>page dashboard</small></h2>
+
+    <p>
+        <a data-lift="Dashboard.edit" class="pure-button pure-button-primary">Edit page content &rarr;</a>
+    </p>
+
+    <p>
+        <a data-lift="Dashboard.signups" class="pure-button pure-button-primary">View signups &rarr;</a>
+    </p>
+
+    <form data-lift="Dashboard.controls?form=post" class="pure-form pure-form-stacked">
+        <fieldset>
+            <label for="status-online">
+                <input id="status-online" type="checkbox" data-name="status-checkbox" value="published">
+                Page is online
+            </label>
+
+            <ul data-name="links">
+                <li data-name="item-local">
+                    <a href="surestartup.localhost" data-name="link-local">surestartup.localhost</a>
+                </li>
+                <li data-name="item-domain">
+                    <a href="www.surestartup.com" data-name="link-domain">www.surestartup.com</a>
+                </li>
+            </ul>
+
+            <label for="local-id" class="pure-radio">
+                Local ID. Your page is available at second-level domain
+                    <span class="text-bold" data-name="sld">local-id.surestartup.com</span>
+            </label>
+            <input type="text" id="local-id" data-name="local-id"/>
+            <label for="local-id" class="text-danger"><span data-lift="msg?id=local-id"></span></label>
+
+            <label for="domain">Custom domain (optional)</label>
+            <input type="text" id="domain" data-name="domain" placeholder="www.example.com"/>
+            <label for="domain" class="text-danger"><span data-lift="Msg?id=domain"></span></label>
+
+            <p data-name="dns-help">
+                You need to setup CNAME record on your domain pointing to
+                <span data-lift="CNAMEHost" class="text-bold">surestartup.com</span>
+                <a class="pure-button button-secondary" data-name="dns-lookup">Verify DNS record</a>
+                <span data-name="dns-msg"></span>
+            </p>
+
+            <label for="ga">
+                Google Analytics tracking id (optional).
+            </label>
+            <input type="text" id="ga" data-name="ga" placeholder="UA-11111111-1"/>
+            <label for="ga" class="text-danger"><span data-lift="msg?id=ga"></span></label>
+
+            <button type="submit" class="pure-button pure-button-primary">Save</button>
+        </fieldset>
+    </form>
+
+    <form data-lift="Dashboard.remove?form=post" class="pure-form pure-form-stacked">
+        <fieldset>
+            <p>Deleting the page is irreversible...</p>
+
+            <a class="pure-button button-warning" data-name="remove">Delete this page</a>
+
+            <label for="remove-local-id" class="text-danger">
+                <span data-lift="Msg?id=remove-local-id"></span>
+            </label>
+
+            <div data-name="confirm-box">
+                <p></p>
+
+                <label for="remove-local-id">Enter local ID to confirm that you want to delete this page.</label>
+                <input type="text" id="remove-local-id" data-name="remove-local-id"/>
+                <button type="submit" class="pure-button button-danger">Delete once and forever</button>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+
+</body>
+</html>
+

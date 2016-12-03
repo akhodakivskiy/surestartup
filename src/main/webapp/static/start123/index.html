@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/x-icon" href="/static/start123/favicon.ico">
+    <link rel="stylesheet" href="/static/css/pure-min.css">
+    <link rel="stylesheet" href="/static/css/grids-responsive-min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<lift:embed what="edit-controls">
+    <lift:bind-at name="menu_item"></lift:bind-at>
+</lift:embed>
+
+<div id="layout">
+
+     <div class="header">
+         <div data-lift="IdeaImg?name=logo&height=69&width=71">
+            <img class="logo" src="/static/start123/icon48.png">
+         </div>
+         <h1 data-lift="IdeaTitle">
+             <span>SureStartup</span>
+         </h1>
+
+         <h2 data-lift="IdeaDescription">
+             <span>Validate your startup idea in 5 minutes</span>
+         </h2>
+    </div>
+
+    <div class="content">
+        <div class="bullets">
+            <div class="bullet-item">
+                <div class="circle">1</div>
+                <div class="copy">
+                    <h3 data-lift="IdeaText?name=bullet-title-1">
+                        <span>Choose the perfect landing page template for your idea.</span>
+                    </h3>
+                    <p data-lift="IdeaText?name=bullet-desc-1">
+                        <span>Fill the template with attention snatching content.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bullet-item">
+                <div class="circle">2</div>
+                <div class="copy">
+                    <h3 data-lift="IdeaText?name=bullet-title-2">
+                        <span>SureStartup.com creates a landing page.</span>
+                    </h3>
+                    <p data-lift="IdeaText?name=bullet-desc-2">
+                        <span>Share the landing page with relevant communities.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bullet-item">
+                <div class="circle">3</div>
+                <div class="copy">
+                    <h3 data-lift="IdeaText?name=bullet-title-3">
+                        <span>Prospective users sign-up and provide feedback.</span>
+                    </h3>
+                    <p data-lift="IdeaText?name=bullet-desc-3">
+                        <span>Begin building the product. Or validate another idea.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-wrapper" data-lift="IdeaText?name=start">
+            <a class="pure-button pure-button-primary button-success" href="/start">
+                <span>Get Started</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="copyright" data-lift="IdeaText?name=copyright">
+            <span>&copy; 2014 SureStartup. All rights reserved</span>
+        </p>
+        <p class="powered">
+            <a data-lift="IdeaPowered" href="#">Powered by SureStartup</a>
+        </p>
+    </div>
+</div>
+
+<div data-lift="embed?what=ga"></div>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+  color: #444;
+  background-color: transparent;
+  line-height: 1.6;
+  background-image: url(/static/start123/skulls.png);
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto auto;
+}
+
+
+#layout {
+  position: relative;
+  padding-left: 0px;
+}
+
+.header {
+  max-width: 640px;
+  margin: 0px auto;
+  padding: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  border-bottom: 1px solid #222;
+  background: none;
+}
+
+.navbar.pure-menu {
+  background: none;
+  text-align: left;
+}
+
+.navbar .navbar-signup {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-sizing: content-box;
+}
+
+.navbar li a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar li a:hover {
+  border-radius: 3px;
+  background-color: rgb(160, 160, 160);
+  background-color: rgba(160, 160, 160, 0.6);
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 640px;
+}
+
+.footer {
+  border-top: 1px solid #222;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  max-width: 640px;
+  font-size: 87.5%;
+  color: #777;
+}
+
+.footer p.copyright {
+  float: left;
+}
+
+.footer p.powered {
+  float: right;
+}
+
+.footer p.powered a {
+  color: #777;
+}
+
+h1 {
+  color: #000;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.button-send {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-secondary {
+  color: white;
+  background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-twitter {
+  color: white;
+  background: #55ACEE;
+}
+
+.button-twitter i {
+    width: 1em;
+}
+
+.button-facebook {
+  color: white;
+  background: #3b5998;
+}
+
+.button-facebook i {
+    width: 1em;
+}
+
+.button-warning {
+  color: white;
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-danger {
+  color: white;
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-success {
+  font-size: 150%;
+}
+
+.button-small {
+  font-size: 85%
+}
+
+.button-xsmall {
+  font-size: 70%
+}
+
+.pricing-table {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+/* index.html */
+
+.index-lead {
+  margin-top: 0;
+}
+
+.bullets {
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+.bullet-item {
+  overflow: hidden;
+}
+
+.bullet-item .circle {
+  float:left;
+  width:1.5em;
+  height:1.5em;
+  border-radius:1.5em;
+  font-size:3em;
+  font-weight:300;
+  color: #ddd;
+  line-height:1.5em;
+  text-align:center;
+  vertical-align: middle;
+  background:#000
+}
+
+.bullet-item .copy {
+  overflow:hidden;
+  vertical-align: middle;
+  padding-left:.5em;
+}
+
+.bullet-item .copy h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size:1.4em;
+}
+
+.bullet-item .copy p {
+  margin-top: .5em;
+}
+
+.faq a {
+  color: #222;
+}
+
+.text-danger {
+    color: rgb(202, 60, 60);
+}
+
+.text-success {
+    color: rgb(28, 184, 65);
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.flashes ul {
+    border: solid 1px;
+    border-radius: .2em;
+    padding: 1em;
+}
+
+.flashes-error ul {
+    color: rgb(202, 60, 60);
+    border-color: rgb(202, 60, 60);
+}
+
+.flashes-notice ul {
+    color: rgb(28, 184, 65);
+    border-color: rgb(28, 184, 65);
+}
+
+.flashes ul li {
+    list-style-type: none;
+}
+
+.template-new-page {
+  margin-bottom: 2em;
+}
+
+.template-copy {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.template-img {
+  background: #AAA;
+  border: solid 2px black;
+  border-radius: .5em;
+}
+
+.my-table {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.my-table thead {
+  background: transparent;
+}
+
+.my-table thead a {
+  color: #444;
+}
+
+.my-paginator {
+  margin-top: 1em;
+}
+
+.my-paginator ul {
+  display: inline;
+  margin-right: 1em;
+}
+
+.my-paginator ul li {
+  margin-right: .5em;
+}
+
+.col-start-left {
+  margin-right: 1em;
+}
+
+.col-start-right {
+  margin-left: 1em;
+}
+
+ul.breadcrumbs {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top:1em;
+}
+
+ul.breadcrumbs li {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+ul.breadcrumbs li:after {
+    margin-left: .5em;
+    content: "\203A";
+}
+
+ul.breadcrumbs li:last-child:after {
+    margin-left: 0;
+    content: "";
+}

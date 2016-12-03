@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>Start</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+</head>
+<body class="lift:content_id=content">
+
+<div id="content" data-lift="surround?with=default;at=content">
+
+    <h2><span data-lift="Menu.title"></span></h2>
+
+    <div class="navbar pure-menu pure-menu-open pure-menu-horizontal">
+        <div data-lift="Menu.builder?group=admin-pages&linkToSelf=true&li_item:class=pure-menu-selected"></div>
+    </div>
+
+    <table class="pure-table pure-table-horizontal my-table">
+        <thead data-lift="AdminIdeasPage.paginate">
+            <tr>
+                <th><sort:id>ID</sort:id>&nbsp;<hint:id/></th>
+                <th><sort:userid>User ID</sort:userid>&nbsp;<hint:userid/></th>
+                <th><sort:title>Title</sort:title>&nbsp;<hint:title/></th>
+                <th><sort:localid>Local ID</sort:localid>&nbsp;<hint:localid/></th>
+                <th><sort:updated>Updated</sort:updated>&nbsp;<hint:updated/></th>
+                <th><sort:published>Online</sort:published>&nbsp;<hint:published/></th>
+            </tr>
+        </thead>
+        <tbody data-lift="AdminIdeasPage.render">
+            <tr>
+                <td data-name="id">24</td>
+                <td data-name="user-id">12</td>
+                <td><a href="#" data-name="title">Title</a></td>
+                <td data-name="local-id">surestartup</td>
+                <td data-name="updated-at"></td>
+                <td data-name="published"><i class="fa fa-check"></i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div data-lift="AdminIdeasPage.paginate" class="my-paginator">
+        <ul class="pure-paginator">
+            <nav:first></nav:first>
+            <nav:zoomedpages></nav:zoomedpages>
+            <nav:last></nav:last>
+        </ul>
+        <span><nav:records></nav:records></span>
+    </div>
+
+</div>
+
+</body>
+</html>
